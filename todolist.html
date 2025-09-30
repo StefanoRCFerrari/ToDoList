@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="pt-br">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="todolist.css"></style>
+    </head>
+    <body>
+        <script src="todolist.js" defer></script>
+        <div id="app">
+            <h1>Lista de Tarefas</h1>
+            <div class="area-input">
+                <input id="campo-tarefa" type="text" placeholder="Insira Nova Tarefa" onkeydown="verificarTecla(event)">
+                <button id="botao-add" onclick="adicionarTarefa()">+</button>
+            </div>
+            <div class="list-container">
+                <ul id="lista-tarefas"></ul>
+            </div>
+        </div>
+    </body>
+</html>
